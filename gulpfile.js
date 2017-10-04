@@ -7,7 +7,6 @@ var postcss = require('gulp-postcss');
 var csswring = require('csswring');
 var autoprefixer = require('autoprefixer');
 var cssnano = require('cssnano');
-//var atImport = require('postcss-import'); include processor atImport
 
 
 gulp.task('postcss', function(){
@@ -20,15 +19,15 @@ gulp.task('postcss', function(){
     ];
     
     return gulp.src('app/scss/**/*.scss')
-        .pipe(concat('all.scss'))
+        .pipe(concat('styles.scss'))
         .pipe(sass())
         .pipe(postcss(processors))
         .pipe(gulp.dest('app/dist'))
 });
 
 gulp.task('compress', function() {
-  gulp.src(['app/js/animations.js', 'app/js/anime.min.js', 'app/js/functions.js'])
-    .pipe(concat('all.js'))
+  gulp.src(['app/js/**/*.js'])
+    .pipe(concat('script.js'))
     .pipe(minify({
         ext:{
             min:'.min.js'
