@@ -1,0 +1,10 @@
+{
+    "short_name": "Default",
+    "name": "Static default template",
+    "icons": [{
+        "src": "images/icon.png",
+        "sizes": "192x192",
+        "type": "image/png"
+    }],
+    "start_url": "/"
+}
