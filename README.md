@@ -8,3 +8,5 @@ Template has the following integrated tools:
 - Scss;
 - Index.html;
 - Svg iconset;
+
+[![Front‑End_Checklist followed](https://img.shields.io/badge/Front‑End_Checklist-followed-brightgreen.svg)](https://github.com/thedaviddias/Front-End-Checklist/)
